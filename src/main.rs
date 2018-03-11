@@ -18,7 +18,7 @@ mod launcher;
 const DEFAULT_DMENU_COMMAND: &'static str = "rofi -dmenu -i -normal-window -theme Pop-Dark -p '> '";
 
 // From desktopd, we only wrap to run .desktop files with this prefix in pty
-const EXEC_PREFIX: &'static str = "/usr/libexec/run-in-image";
+const EXEC_PREFIX: &'static str = "/run/appimg/run-in-image";
 
 fn print_usage(program: &str, opts: Options) {
     let brief = format!("Usage: {} [options]", program);
